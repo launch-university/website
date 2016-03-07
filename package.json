@@ -1,0 +1,24 @@
+{
+  "name": "launch-u-website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "",
+    "serve": "node-sass scss/app.scss public/css/app.css --include-path=node_modules/bootstrap-sass/assets/stylesheets/ -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/launch-university/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/launch-university/website/issues"
+  },
+  "homepage": "https://github.com/launch-university/website#readme",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "node-sass": "^3.4.2"
+  }
+}
