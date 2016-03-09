@@ -6084,44 +6084,66 @@ h1 {
 .center {
   text-align: center; }
 
-.col-centered {
-  float: none;
-  margin: 0 auto; }
+.alum-bullet-container {
+  padding-left: 50px;
+  padding-right: 50px; }
 
-.alumQuote {
+.alum-quote {
   font-size: 34px;
   font-weight: 100;
   text-align: center;
-  padding: 70px 190px 0px 190px; }
+  padding: 70px 150px 0px 150px; }
 
-.alumQuoteAuthor {
+.alum-quote-author {
   font-size: 28px;
   font-weight: lighter;
   padding-bottom: 70px;
   text-align: center; }
 
-/* for my own visual help - I'll delete it later */
 .testBorder {
-  border: 1px solid black; }
+  border: 1px solid black;
+  /* for my own visual help - I'll delete it later */ }
 
-.bulletPointRow {
-  padding-left: 70px;
-  padding-right: 70px; }
+#bulletpoints-large-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px; }
+
+#bulletpoints-small-wrapper {
+  display: none; }
 
 .bulletpoint-container {
   display: flex;
-  align-items: stretch;
-  margin-bottom: 12px; }
+  align-items: stretch; }
 
 .bulletpoint-title, .bulletpoint-item {
   flex: 1 0 0;
   margin: 0 1em 0 1em; }
 
 .bulletpoint-item {
-  border: 4px solid #ec6c4e; }
+  border: 5px solid #ec6c4e; }
 
 .bulletpoint-item > p {
   padding: 35px;
   font-size: 1.7em;
   line-height: 2em;
   font-weight: lighter; }
+
+.bulletpoint-title-container {
+  margin-bottom: 4px; }
+
+@media (max-width: 1199px) {
+  #bulletpoints-large-wrapper {
+    display: none; }
+  #bulletpoints-small-wrapper {
+    display: inline-block; }
+  .alum-quote {
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    padding: 70px 10px 0px 10px; }
+  .alum-quote-author {
+    font-size: 18px;
+    font-weight: lighter;
+    padding-bottom: 70px;
+    text-align: center; } }
