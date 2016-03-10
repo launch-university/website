@@ -19,7 +19,6 @@ strong {
 h1 {
 	font-weight: 400;
 	font-size: 40px;
-	text-transform: uppercase;
 	letter-spacing: 15px;
 }
 
@@ -189,6 +188,47 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 	vertical-align: center;
 }
 
+/* Sponsor and Footer section */
+
+#footer-wrapper {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+	max-width: 1300px;
+}
+
+.title-sponsor-col {
+	height: 50px;
+	padding: 50px;
+	border-bottom: 1px solid;
+}
+.title-sponsor-col h1 {
+	margin: 0px;
+	padding-bottom: 20px;
+	letter-spacing: 0px;
+}
+
+.title-sponsor-img {
+	max-width: 600px;
+	padding: 75px;
+}
+.sponsors {
+	display: inline-block;
+	text-align: center;
+}
+.sponsors img {
+	padding: 20px;
+	max-width: 200px;
+}
+.gravis-law-img {
+	max-height: 150px;
+}
+
+
+/* Media Queries */
+
 @media (max-width: $screen-md-max) {
 
 	#bulletpoints-large-wrapper {
@@ -213,12 +253,20 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 		text-align: center;
 	}
 
+	h1 {
+	    font-size: 24px;
+	    line-height: 0;
+	}
+
 	h2 {
 		font-size: 18px;
 	}
 }
 @media (max-width: $screen-sm-max) {
 
+	h1 {
+	    font-size: 24px;
+	}
 }
 
 @media (max-width: $screen-xs-max) {
@@ -279,6 +327,10 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
     	margin-bottom: 10px;
 	}
 
+	.title-sponsor-col h1 {
+		line-height: 21px;
+	}
+
 	h2 {
 		line-height: 0px;
 	}
@@ -287,6 +339,25 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 		font-size: 16px;
 	}
 
+	#footer-wrapper {
+		padding-left: 0px;
+		padding-right: 0px
+	}
+
+	.title-sponsor-col h1 {
+		margin: 0px;
+		font-size: 20px;
+		padding-bottom: 20px;
+		letter-spacing: 0px;
+	}
+
+	.title-sponsor-img {
+		max-width: 400px;
+		padding: 20px;
+	}
+	.sponsors img {
+		max-width: 150px;
+	}
 
 }
 
