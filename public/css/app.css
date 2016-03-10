@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("//fonts.googleapis.com/css?family=Open+Sans");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -6069,3 +6069,81 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 
 .popover {
   color: #2C3E50; }
+
+body {
+  color: #ec6c4e; }
+
+strong {
+  font-weight: 400; }
+
+h1 {
+  font-weight: 700;
+  font-size: 70px;
+  text-transform: uppercase; }
+
+.center {
+  text-align: center; }
+
+.alum-bullet-container {
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.alum-quote {
+  font-size: 34px;
+  font-weight: 100;
+  text-align: center;
+  padding: 70px 150px 0px 150px; }
+
+.alum-quote-author {
+  font-size: 28px;
+  font-weight: lighter;
+  padding-bottom: 70px;
+  text-align: center; }
+
+.testBorder {
+  border: 1px solid black;
+  /* for my own visual help - I'll delete it later */ }
+
+#bulletpoints-large-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px; }
+
+#bulletpoints-small-wrapper {
+  display: none; }
+
+.bulletpoint-container {
+  display: flex;
+  align-items: stretch; }
+
+.bulletpoint-title, .bulletpoint-item {
+  flex: 1 0 0;
+  margin: 0 1em 0 1em; }
+
+.bulletpoint-item {
+  border: 5px solid #ec6c4e; }
+
+.bulletpoint-item > p {
+  padding: 35px;
+  font-size: 1.7em;
+  line-height: 2em;
+  font-weight: lighter; }
+
+.bulletpoint-title-container {
+  margin-bottom: 4px; }
+
+@media (max-width: 1199px) {
+  #bulletpoints-large-wrapper {
+    display: none; }
+  #bulletpoints-small-wrapper {
+    display: inline-block; }
+  .alum-quote {
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    padding: 70px 10px 0px 10px; }
+  .alum-quote-author {
+    font-size: 18px;
+    font-weight: lighter;
+    padding-bottom: 70px;
+    text-align: center; } }
