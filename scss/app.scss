@@ -24,8 +24,9 @@ h1 {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 20px;
 	padding-bottom: 10px;
+	line-height: 0px;
 }
 
 h3 {
@@ -154,7 +155,7 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 }
 
 .schedule-icon {
-	font-size: 7em;
+	font-size: 5em;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
