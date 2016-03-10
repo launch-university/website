@@ -6123,7 +6123,7 @@ h3 {
 #bulletpoints-small-wrapper {
   display: none; }
 
-/* Bullet point boxes */
+/* Bullet point flex boxes */
 .bulletpoint-container {
   display: flex;
   align-items: stretch; }
@@ -6144,40 +6144,13 @@ h3 {
 .bulletpoint-title-container {
   margin-bottom: 4px; }
 
-/*
-.media {
-	margin: 10px 10px 0 10px;
-}
-.media .img-container {
-	float: left;
-	margin-right: 10px;
-}
-.media .img-container .media-image {
-	display: block;
-}
-.media .imgExt {
-	float: right;
-	margin-left: 10px;
-}
-.media p {
-	padding: 35px;
-	font-size: 1.4em;
-	line-height: 2em;
-	font-weight: lighter
-}
 /* Schedule Section Items */
 #schedule-wrapper {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
   max-width: 1300px; }
-
-.schedule-title {
-  /*
-	width: 4	00px;
-	display: block;
-	text-align: center; */ }
 
 .schedule-row-bg-1 {
   background-color: #f2f2f2; }
@@ -6204,8 +6177,8 @@ h3 {
 
 .schedule-detail p {
   padding: 35px 0px 35px 0px;
-  font-size: 1.4em;
-  line-height: 2em;
+  font-size: 1.25em;
+  line-height: 1.65em;
   font-weight: lighter; }
 
 .schedule-icon {
@@ -6254,14 +6227,39 @@ h3 {
     font-size: 18px; } }
 
 @media (max-width: 767px) {
+  .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+  .alum-bullet-container {
+    padding-left: 45px;
+    padding-right: 45px; }
+  .alum-quote {
+    font-size: 18px; }
+  .alum-quote-author {
+    font-size: 16px;
+    padding-bottom: 25px; }
+  .bulletpoint-title, .bulletpoint-item {
+    flex: 1 0 0;
+    margin: auto; }
   #schedule-wrapper {
     padding-left: 20px;
     padding-right: 20px; }
   .schedule-image {
     display: none; }
   .schedule-icon {
-    font-size: 36px;
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    display: none; }
+  .schedule-title {
+    letter-spacing: 5px; }
+  .session-number {
+    display: none; }
+  .session-date {
+    width: 100%; }
   .schedule-detail {
-    text-align: justify; } }
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    margin-bottom: 10px; }
+  h2 {
+    line-height: 0px; }
+  h3 {
+    font-size: 16px; } }

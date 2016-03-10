@@ -3,46 +3,59 @@
 @import "bootswatch";
 
 $main-color: #ec6c4e;
+$sessionone-color: #f2f2f2;
+$sessiontwo-color: #e6e6e6;
+$sessionthree-color: #d9d9d9;
+$sessionfour-color: #cccccc;
 
 body {
 	color: $main-color
 }
+
 strong {
 	font-weight: 400;
 }
+
 h1 {
 	font-weight: 400;
 	font-size: 40px;
 	text-transform: uppercase;
 	letter-spacing: 15px;
 }
+
 h2 {
 	font-size: 24px;
 	padding-bottom: 10px;
 }
+
 h3 {
 	font-weight: 100;
 	font-size: 20px;
 }
+
 .center {
 	text-align: center;
 }
+
 .alum-bullet-container {
 	padding-left: 100px;
 	padding-right: 100px;
 }
+
 .alum-quote {
 	font-size: 28px;
 	font-weight: 100;
 	text-align: center;
 	padding: 70px 150px 0px 150px;
 }
+
 .alum-quote-author {
 	font-size: 20px;
 	font-weight: lighter;
 	padding-bottom: 70px;
 	text-align: center;
 }
+
 .testBorder {
 	border: 1px solid black; /* for my own visual help - I'll delete it later */
 }
@@ -54,11 +67,12 @@ h3 {
 	padding-right: 50px;
 	max-width: 1300px;
 }
+
 #bulletpoints-small-wrapper {
 	display: none;
 }
 
-/* Bullet point boxes */
+/* Bullet point flex boxes */
 
 $bulletpoint-gutter-size: 1;
 $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
@@ -88,57 +102,35 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 	margin-bottom: 4px;
 }
 
-/*
-.media {
-	margin: 10px 10px 0 10px;
-}
-.media .img-container {
-	float: left;
-	margin-right: 10px;
-}
-.media .img-container .media-image {
-	display: block;
-}
-.media .imgExt {
-	float: right;
-	margin-left: 10px;
-}
-.media p {
-	padding: 35px;
-	font-size: 1.4em;
-	line-height: 2em;
-	font-weight: lighter
-}
 /* Schedule Section Items */
 
 #schedule-wrapper {
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-left: 100px;
+	padding-right: 100px;
 	max-width: 1300px;
 }
 
 .schedule-title {
-	/*
-	width: 4	00px;
-	display: block;
-	text-align: center; */
+
 }
 
 .schedule-row-bg-1 {
-	background-color:  #f2f2f2;
-}
-.schedule-row-bg-2 {
-	background-color:  #e6e6e6;
-}
-.schedule-row-bg-3 {
-	background-color:  #d9d9d9;
-}
-.schedule-row-bg-4 {
-	background-color:  #cccccc;
+	background-color:  $sessionone-color;
 }
 
+.schedule-row-bg-2 {
+	background-color:  $sessiontwo-color;
+}
+
+.schedule-row-bg-3 {
+	background-color:  $sessionthree-color;
+}
+
+.schedule-row-bg-4 {
+	background-color:  $sessionfour-color;
+}
 
 .schedule-title-row {
 	border-bottom: 1px solid;
@@ -156,8 +148,8 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 }
 .schedule-detail p {
 	padding: 35px 0px 35px 0px;
-	font-size: 1.4em;
-	line-height: 2em;
+	font-size: 1.25em;
+	line-height: 1.65em;
 	font-weight: lighter
 }
 
@@ -166,21 +158,27 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
 /* removing gutter in schedule row */
+
 .row.row-no-gutter {
 	margin: 0px;
 }
+
 .row.row-no-gutter [class*="col-"] {
     padding: 0
 }
+
 .img-full-width {
     width: 100.5%;
     height: auto;
 }
+
 .has-inner .row.row-no-gutter {
     margin-left: -10px;
     margin-right: -10px;
 }
+
 .row.row-no-gutter .inner {
     padding-left: 10px;
     padding-right: 10px;
@@ -191,44 +189,103 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 }
 
 @media (max-width: $screen-md-max) {
+
 	#bulletpoints-large-wrapper {
 		display: none;
 	}
+
 	#bulletpoints-small-wrapper {
 		display: inline-block;
 	}
+
 	.alum-quote {
 		font-size: 24px;
 		font-weight: 100;
 		text-align: center;
 		padding: 70px 10px 0px 10px;
 	}
+
 	.alum-quote-author {
 		font-size: 18px;
 		font-weight: lighter;
 		padding-bottom: 70px;
 		text-align: center;
 	}
+
 	h2 {
 		font-size: 18px;
 	}
 }
+@media (max-width: $screen-sm-max) {
+
+}
 
 @media (max-width: $screen-xs-max) {
+
+	.row {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+
+	.alum-bullet-container {
+    	padding-left: 45px;
+    	padding-right: 45px;
+	}
+
+	.alum-quote {
+		font-size: 18px;
+	}
+
+	.alum-quote-author {
+		font-size: 16px;
+		padding-bottom: 25px;
+	}
+
+	.bulletpoint-title, .bulletpoint-item {
+  		flex: 1 0 0;
+  		margin: auto;
+	}
+
 	#schedule-wrapper {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
 	.schedule-image {
 		display: none;
 	}
+
 	.schedule-icon {
-		font-size: 36px;
-		padding-top: 30px;
-		padding-bottom: 30px;
+		display: none;
 	}
+
+	.schedule-title {
+		letter-spacing: 5px;
+	}
+
+	.session-number {
+		display: none;
+	}
+
+	.session-date {
+		width: 100%;
+	}
+
 	.schedule-detail {
-		text-align: justify;
+    	border-right: 1px solid $sessiontwo-color;
+    	border-bottom: 1px solid $sessiontwo-color;
+    	border-left: 1px solid $sessiontwo-color;
+    	margin-bottom: 10px;
 	}
+
+	h2 {
+		line-height: 0px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+
 }
 
