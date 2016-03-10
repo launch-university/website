@@ -6209,7 +6209,7 @@ h3 {
   vertical-align: center; }
 
 /* Sponsor and Footer section */
-#footer-wrapper {
+#sponsor-wrapper {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -6241,6 +6241,68 @@ h3 {
 
 .gravis-law-img {
   max-height: 150px; }
+
+.footer {
+  min-height: 300px;
+  background-color: #cccccc;
+  overflow: hidden; }
+
+.footer-inner {
+  max-width: 800px; }
+
+.footer-left {
+  min-height: 300px;
+  max-width: 300px;
+  background-color: #ec6c4e;
+  z-index: 100; }
+
+.social-media-icons {
+  font-size: 48px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  color: white; }
+
+.social-media-twitter {
+  color: white; }
+
+.social-media-twitter:hover {
+  color: #ec6c4e; }
+
+.social-media-facebook {
+  color: white; }
+
+.social-media-facebook:hover {
+  color: #ec6c4e; }
+
+.footer-buttons {
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+.copyright {
+  margin-bottom: 10px;
+  color: white; }
+
+/* Button Styling */
+.btn {
+  margin: 10px; }
+
+.btn.outline {
+  background: none;
+  padding: 12px 22px; }
+
+.btn-primary.outline {
+  border: 1px solid white;
+  color: white; }
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+  color: #ec6c4e;
+  border-color: #ec6c4e; }
+
+.btn-primary.outline:active, .btn-primary.outline.active {
+  border-color: black;
+  color: black;
+  background-color: white;
+  box-shadow: none; }
 
 /* Media Queries */
 @media (max-width: 1199px) {
@@ -6307,7 +6369,7 @@ h3 {
     line-height: 0px; }
   h3 {
     font-size: 16px; }
-  #footer-wrapper {
+  #sponsor-wrapper {
     padding-left: 0px;
     padding-right: 0px; }
   .title-sponsor-col h1 {
