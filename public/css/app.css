@@ -6077,25 +6077,34 @@ strong {
   font-weight: 400; }
 
 h1 {
-  font-weight: 700;
-  font-size: 70px;
-  text-transform: uppercase; }
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 15px; }
+
+h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  line-height: 0px; }
+
+h3 {
+  font-weight: 100;
+  font-size: 20px; }
 
 .center {
   text-align: center; }
 
 .alum-bullet-container {
-  padding-left: 50px;
-  padding-right: 50px; }
+  padding-left: 100px;
+  padding-right: 100px; }
 
 .alum-quote {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 100;
   text-align: center;
   padding: 70px 150px 0px 150px; }
 
 .alum-quote-author {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: lighter;
   padding-bottom: 70px;
   text-align: center; }
@@ -6107,11 +6116,14 @@ h1 {
 #bulletpoints-large-wrapper {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
   max-width: 1300px; }
 
 #bulletpoints-small-wrapper {
   display: none; }
 
+/* Bullet point flex boxes */
 .bulletpoint-container {
   display: flex;
   align-items: stretch; }
@@ -6121,17 +6133,178 @@ h1 {
   margin: 0 1em 0 1em; }
 
 .bulletpoint-item {
-  border: 5px solid #ec6c4e; }
+  border: 1px solid #ec6c4e; }
 
 .bulletpoint-item > p {
   padding: 35px;
-  font-size: 1.7em;
-  line-height: 2em;
+  font-size: 1.25em;
+  line-height: 1.65em;
   font-weight: lighter; }
 
 .bulletpoint-title-container {
   margin-bottom: 4px; }
 
+/* Schedule Section Items */
+#schedule-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 1300px; }
+
+.schedule-row-bg-1 {
+  background-color: #f2f2f2; }
+
+.schedule-row-bg-2 {
+  background-color: #e6e6e6; }
+
+.schedule-row-bg-3 {
+  background-color: #d9d9d9; }
+
+.schedule-row-bg-4 {
+  background-color: #cccccc; }
+
+.schedule-title-row {
+  border-bottom: 1px solid;
+  margin-top: 30px; }
+
+.schedule-datetime {
+  text-align: center;
+  font-size: 14px; }
+
+.schedule-inner-image {
+  float: left; }
+
+.schedule-detail p {
+  padding: 35px 0px 35px 0px;
+  font-size: 1.25em;
+  line-height: 1.65em;
+  font-weight: lighter; }
+
+.schedule-icon {
+  font-size: 5em;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+/* removing gutter in schedule row */
+.row.row-no-gutter {
+  margin: 0px; }
+
+.row.row-no-gutter [class*="col-"] {
+  padding: 0; }
+
+.img-full-width {
+  width: 100.5%;
+  height: auto; }
+
+.has-inner .row.row-no-gutter {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.row.row-no-gutter .inner {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.media-inner > .media {
+  vertical-align: center; }
+
+/* Sponsor and Footer section */
+#sponsor-wrapper {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 1300px; }
+
+.title-sponsor-col {
+  height: 50px;
+  padding: 50px;
+  border-bottom: 1px solid; }
+
+.title-sponsor-col h1 {
+  margin: 0px;
+  padding-bottom: 20px;
+  letter-spacing: 0px; }
+
+.title-sponsor-img {
+  max-width: 600px;
+  padding: 75px; }
+
+.sponsors {
+  display: inline-block;
+  text-align: center; }
+
+.sponsors img {
+  padding: 20px;
+  max-width: 200px; }
+
+.gravis-law-img {
+  max-height: 150px; }
+
+.footer {
+  min-height: 300px;
+  background-color: #cccccc;
+  overflow: hidden; }
+
+.footer-inner {
+  max-width: 800px; }
+
+.footer-left {
+  min-height: 300px;
+  max-width: 300px;
+  background-color: #ec6c4e;
+  z-index: 100; }
+
+.social-media-icons {
+  font-size: 48px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  color: white; }
+
+.social-media-twitter {
+  color: white; }
+
+.social-media-twitter:hover {
+  color: #ec6c4e; }
+
+.social-media-facebook {
+  color: white; }
+
+.social-media-facebook:hover {
+  color: #ec6c4e; }
+
+.footer-buttons {
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+.copyright {
+  margin-bottom: 10px;
+  color: white; }
+
+/* Button Styling */
+.btn {
+  margin: 10px; }
+
+.btn.outline {
+  background: none;
+  padding: 12px 22px; }
+
+.btn-primary.outline {
+  border: 1px solid white;
+  color: white; }
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+  color: #ec6c4e;
+  border-color: #ec6c4e; }
+
+.btn-primary.outline:active, .btn-primary.outline.active {
+  border-color: black;
+  color: black;
+  background-color: white;
+  box-shadow: none; }
+
+/* Media Queries */
 @media (max-width: 1199px) {
   #bulletpoints-large-wrapper {
     display: none; }
@@ -6146,4 +6319,66 @@ h1 {
     font-size: 18px;
     font-weight: lighter;
     padding-bottom: 70px;
-    text-align: center; } }
+    text-align: center; }
+  h1 {
+    font-size: 24px;
+    line-height: 0; }
+  h2 {
+    font-size: 18px; } }
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 24px; } }
+
+@media (max-width: 767px) {
+  .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+  .alum-bullet-container {
+    padding-left: 45px;
+    padding-right: 45px; }
+  .alum-quote {
+    font-size: 18px; }
+  .alum-quote-author {
+    font-size: 16px;
+    padding-bottom: 25px; }
+  .bulletpoint-title, .bulletpoint-item {
+    flex: 1 0 0;
+    margin: auto; }
+  #schedule-wrapper {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .schedule-image {
+    display: none; }
+  .schedule-icon {
+    display: none; }
+  .schedule-title {
+    letter-spacing: 5px; }
+  .session-number {
+    display: none; }
+  .session-date {
+    width: 100%; }
+  .schedule-detail {
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    margin-bottom: 10px; }
+  .title-sponsor-col h1 {
+    line-height: 21px; }
+  h2 {
+    line-height: 0px; }
+  h3 {
+    font-size: 16px; }
+  #sponsor-wrapper {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .title-sponsor-col h1 {
+    margin: 0px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 0px; }
+  .title-sponsor-img {
+    max-width: 400px;
+    padding: 20px; }
+  .sponsors img {
+    max-width: 150px; } }
