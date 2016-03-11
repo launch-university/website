@@ -6071,7 +6071,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   color: #2C3E50; }
 
 body {
-  color: #ec6c4e; }
+  color: #f06147; }
 
 strong {
   font-weight: 400; }
@@ -6093,7 +6093,7 @@ h3 {
   text-align: center; }
 
 a {
-  color: #ec6c4e; }
+  color: #f06147; }
 
 #site-header {
   background: no-repeat url("/img/hero-launchu.jpg") center top #ffffff;
@@ -6154,7 +6154,7 @@ a {
 #site-inner-wrapper {
   display: inline-block;
   padding: 12px 40px 12px 40px;
-  background-color: #ec6c4e;
+  background-color: #f06147;
   color: #ffffff;
   max-width: 800px;
   text-align: center; }
@@ -6212,7 +6212,7 @@ a {
   letter-spacing: 15px; }
 
 .bulletpoint-item {
-  border: 1px solid #ec6c4e; }
+  border: 1px solid #f06147; }
 
 .bulletpoint-item > p {
   padding: 35px;
@@ -6329,7 +6329,7 @@ a {
 .footer-left {
   min-height: 300px;
   max-width: 300px;
-  background-color: #ec6c4e; }
+  background-color: #f06147; }
   .footer-left #footer-logo {
     position: relative;
     margin: 0 auto;
@@ -6347,11 +6347,20 @@ a {
     font-size: .8em; }
 
 #footer-nav {
-  position: relative; }
+  position: relative;
+  margin-top: 100px; }
   #footer-nav ul {
     list-style-type: none;
     margin-right: 150px; }
   #footer-nav li {
+    float: right; }
+
+.footer-nav-social {
+  position: relative;
+  font-size: 48px; }
+  .footer-nav-social ul {
+    list-style-type: none; }
+  .footer-nav-social li {
     float: right; }
 
 .social-media {
@@ -6364,7 +6373,7 @@ a {
   padding-right: 15px; }
 
 .social-media-icons:hover {
-  color: #ec6c4e; }
+  color: #f06147; }
 
 .footer-buttons {
   padding-top: 75px;
@@ -6396,12 +6405,12 @@ a {
   color: white; }
 
 .btn-primary.outline-signup {
-  border: 1px solid #ec6c4e;
-  color: #ec6c4e; }
+  border: 1px solid #f06147;
+  color: #f06147; }
 
 .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
-  color: #ec6c4e;
-  border-color: #ec6c4e; }
+  color: #f06147;
+  border-color: #f06147; }
 
 .btn-primary.outline-signup:hover, .btn-primary.outline-signup:focus, .btn-primary.outline-signup:active, .btn-primary.outline-signup.active, .open > .dropdown-toggle.btn-primary {
   color: #59c9e9;
@@ -6445,9 +6454,7 @@ a {
   .btn {
     margin: 5px; }
   .social-media {
-    padding-top: 0px; }
-  .footer-inner ul {
-    margin-right: 0px; } }
+    padding-top: 0px; } }
 
 @media (max-width: 991px) {
   h1 {
@@ -6456,8 +6463,8 @@ a {
     margin: 5px; }
   .social-media {
     padding-top: 0px; }
-  .footer-inner ul {
-    margin-right: 0px; } }
+  #footer-nav {
+    margin-top: 20px; } }
 
 @media (max-width: 767px) {
   .row {
@@ -6537,7 +6544,9 @@ a {
     border-radius: 6px; }
   .social-media {
     padding-top: 0px; }
-  #footer-nav ul {
-    margin-right: 0px; }
-  #footer-nav li {
-    float: right; } }
+  #footer-nav {
+    margin-top: 20px; }
+    #footer-nav ul {
+      margin-right: 0px; }
+    #footer-nav li {
+      float: right; } }
