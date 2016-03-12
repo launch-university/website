@@ -6141,6 +6141,9 @@ a {
   #site-nav .fuse-link {
     padding: 0px; }
 
+.about-small {
+  display: none; }
+
 #site-description {
   bottom: -30px;
   position: absolute;
@@ -6357,7 +6360,8 @@ a {
 
 .footer-nav-social {
   position: relative;
-  font-size: 48px; }
+  font-size: 48px;
+  display: block; }
   .footer-nav-social ul {
     list-style-type: none; }
   .footer-nav-social li {
@@ -6435,6 +6439,10 @@ a {
     display: none; }
   #bulletpoints-small-wrapper {
     display: inline-block; }
+  .about-large {
+    display: none; }
+  .about-small {
+    display: inline-block; }
   .alum-quote {
     font-size: 24px;
     font-weight: 100;
@@ -6482,7 +6490,7 @@ a {
       width: 100px; }
     #site-nav a {
       padding: 8px;
-      font-size: 1em; }
+      font-size: .8em; }
     #site-nav ul {
       margin-right: 5px; }
   .alum-bullet-container {
@@ -6529,7 +6537,7 @@ a {
     padding-bottom: 20px;
     letter-spacing: 0px; }
   .title-sponsor-img {
-    max-width: 400px;
+    max-width: 350px;
     padding: 20px; }
   .sponsors img {
     max-width: 150px; }
@@ -6544,9 +6552,7 @@ a {
     border-radius: 6px; }
   .social-media {
     padding-top: 0px; }
-  #footer-nav {
-    margin-top: 20px; }
-    #footer-nav ul {
-      margin-right: 0px; }
-    #footer-nav li {
-      float: right; } }
+  #footer-nav ul {
+    margin-right: 0px; }
+  #footer-nav li {
+    float: right; } }
