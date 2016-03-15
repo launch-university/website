@@ -7,6 +7,9 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/app.css?v1.0">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--JS -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/scrollto.js"></script>
     <!-- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> -->
 </head>
 <body>
@@ -22,9 +25,9 @@
             </div>
             <ul>
                 <li><a href="http://goo.gl/AcXwEm">Sign Up</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li class="about-large"><a href="#about1">About</a></li>
-                <li class="about-small"><a href="#about2">About</a></li>
+                <li><a href="#" class="scroll-link" data-id="schedule">Schedule</a></li>
+                <li class="about-large"><a href="#" class="scroll-link" data-id="about1">About</a></li>
+                <li class="about-small"><a href="#" class="scroll-link" data-id="about2">About</a></li>
             </ul>
         </nav>
         <div id="site-description">
@@ -51,7 +54,7 @@
                 </div>
 
                 <!-- Bulletpoints large viewport -->
-                <div id="about1">
+                <section id="about1">
                     <div id="bulletpoints-large-wrapper">
                         <div class="bulletpoint-container bulletpoint-title-container">
                             <div class="bulletpoint-title">
@@ -76,10 +79,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!-- Bulletpoints small viewport -->
-                <div id="about2">
+                <section id="about2">
                     <div class="row">
                         <div id="bulletpoints-small-wrapper">
                             <div class="bulletpoint-title">
@@ -102,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!-- Alumni Quote -->
                 <div class="row">
