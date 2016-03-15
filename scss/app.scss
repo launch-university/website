@@ -558,6 +558,13 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 	#footer-nav {
 		margin-top: 20px;
 	}
+
+	#site-nav {
+
+		ul {
+			margin-right: 30px;
+		}
+	}
 }
 
 @media (max-width: $screen-xs-max) {
@@ -578,7 +585,8 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 	}
 
 	#site-nav {
-		margin: 0px;
+		margin-left: 20px;
+		padding-left: 70px;
 
 		#nav-logo {
 			width:	100px;
