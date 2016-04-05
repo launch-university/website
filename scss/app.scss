@@ -53,8 +53,12 @@ img.desaturate {
 	-webkit-filter: grayscale(0%);
 }
 
+.sch-img {
+	max-width: 330px;
+}
+
 #site-header {
-  background: no-repeat url("/img/hero-launchu.jpg") center top #ffffff;
+  background: no-repeat url("/img/hero-launchW3.jpg") center top #ffffff;
   background-size: cover;
   height: 500px;
   width: 100%;
@@ -272,7 +276,7 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 
 }
 .schedule-detail p {
-	padding: 35px 0px 35px 0px;
+	padding: 50px 0px 50px 0px;
 	font-size: 1.25em;
 	line-height: 1.65em;
 	font-weight: lighter
@@ -390,8 +394,12 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 }
 
 #footer-nav {
+	display: table;
 	position: relative;
+	vertical-align: middle;
+	text-align: center;
 	margin-top: 100px;
+	font-size: 48px;
 
 	ul {
     	list-style-type: none;
@@ -546,6 +554,15 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 	    font-size: 24px;
 	}
 
+	.sch-img {
+		max-width: 230px;
+	}
+
+	.schedule-detail p {
+		padding: 30px 0px 30px 0px;
+		font-size: 1.0em;
+	}
+
 	.btn {
 		margin: 5px;
 	}
@@ -558,6 +575,33 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 
 	h1 {
 	    font-size: 24px;
+	}
+
+	#site-nav {
+		margin: 0px;
+		padding-left: 130px;
+
+		#nav-logo {
+			width:	100px;
+		}
+
+		a {
+			padding: 8px;
+			font-size: 1.0em;
+		}
+
+		ul {
+			margin-right: 5px;
+		}
+	}
+
+	.sch-img {
+		max-width: 175px;
+	}
+
+	.schedule-detail p {
+		padding: 10px 0px 10px 0px;
+		font-size: 1.0em;
 	}
 
 	.btn {
@@ -592,13 +636,14 @@ $bulletpoint-gutter-size-em: #{$bulletpoint-gutter-size}em;
 
 	#site-nav {
 		margin: 0px;
+		padding-left: 130px;
 
 		#nav-logo {
 			width:	100px;
 		}
 
 		a {
-			padding: 8px;
+			padding: 4px;
 			font-size: .8em;
 		}
 

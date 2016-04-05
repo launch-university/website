@@ -6106,8 +6106,11 @@ img.desaturate {
   -webkit-filter: grayscale(0);
   -webkit-filter: grayscale(0%); }
 
+.sch-img {
+  max-width: 330px; }
+
 #site-header {
-  background: no-repeat url("/img/hero-launchu.jpg") center top #ffffff;
+  background: no-repeat url("/img/hero-launchW3.jpg") center top #ffffff;
   background-size: cover;
   height: 500px;
   width: 100%;
@@ -6269,7 +6272,7 @@ img.desaturate {
   float: left; }
 
 .schedule-detail p {
-  padding: 35px 0px 35px 0px;
+  padding: 50px 0px 50px 0px;
   font-size: 1.25em;
   line-height: 1.65em;
   font-weight: lighter; }
@@ -6361,8 +6364,12 @@ img.desaturate {
     font-size: .8em; }
 
 #footer-nav {
+  display: table;
   position: relative;
-  margin-top: 100px; }
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 48px; }
   #footer-nav ul {
     list-style-type: none;
     margin-right: 150px; }
@@ -6470,6 +6477,11 @@ img.desaturate {
     font-size: 18px; }
   h1 {
     font-size: 24px; }
+  .sch-img {
+    max-width: 230px; }
+  .schedule-detail p {
+    padding: 30px 0px 30px 0px;
+    font-size: 1.0em; }
   .btn {
     margin: 5px; }
   .social-media {
@@ -6478,6 +6490,21 @@ img.desaturate {
 @media (max-width: 991px) {
   h1 {
     font-size: 24px; }
+  #site-nav {
+    margin: 0px;
+    padding-left: 130px; }
+    #site-nav #nav-logo {
+      width: 100px; }
+    #site-nav a {
+      padding: 8px;
+      font-size: 1.0em; }
+    #site-nav ul {
+      margin-right: 5px; }
+  .sch-img {
+    max-width: 175px; }
+  .schedule-detail p {
+    padding: 10px 0px 10px 0px;
+    font-size: 1.0em; }
   .btn {
     margin: 5px; }
   .social-media {
@@ -6496,11 +6523,12 @@ img.desaturate {
     line-height: 1em;
     font-size: 1em; }
   #site-nav {
-    margin: 0px; }
+    margin: 0px;
+    padding-left: 130px; }
     #site-nav #nav-logo {
       width: 100px; }
     #site-nav a {
-      padding: 8px;
+      padding: 4px;
       font-size: .8em; }
     #site-nav ul {
       margin-right: 5px; }

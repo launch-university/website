@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "",
     "sass-server": "node-sass scss/app.scss public/css/app.css --include-path=node_modules/bootstrap-sass/assets/stylesheets/ -w",
-    "webserver": "http-server public/"
+    "webserver": "http-server public/",
+    "deploy": "surge -p public -d tclaunch.surge.sh"
   },
   "repository": {
     "type": "git",
